@@ -11,11 +11,14 @@ body{
     color:seashell;
     opacity: 0.9;
     text-align: center;
+    line-height: 1.2;
 }
 h2{
-    font-size: 3.5rem;
+    font-size: 30px;
+    margin: 10px;
 }
 h4{
+    font-size: 16px;
 }
 
 /*nav bar*/
@@ -55,7 +58,15 @@ nav ul li a:hover{
     color: #b2aca6;
     cursor: pointer;
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    flex-basis: 1200px auto;
+    margin: 70px 30px;
+}
 /*Hero Image*/
 .hero-image{
     background-image: url("../img/img-mission-background.jpg");
@@ -68,7 +79,7 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 69px 30px;
+    width: 100%;
     z-index: -1;
 }
 .hero-text{
@@ -78,4 +89,33 @@ nav ul li a:hover{
     flex-basis: 1200px auto;
     padding: 10px;
     background-color: rgba(0, 0, 0);
+}
+/*Teas of the month section*/
+#featured{
+    margin-top:70px;
+}
+.teas-of-the-month{
+    display: flex;
+    flex-basis:1000px;
+    /*height: 700px;*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+.tea-card {
+    margin: 10px;
+    width: 300px;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+}
+.tea-card img{
+    width:300px;
+    height:200px;
+    margin: 10px;
 }
