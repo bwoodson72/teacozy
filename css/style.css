@@ -15,10 +15,18 @@ body{
 }
 h2{
     font-size: 30px;
-    margin: 10px;
+
+    width: 100%;
+    line-height: 1;
+}
+h3{
+    font-size: 24px;
 }
 h4{
     font-size: 16px;
+}
+p{
+    margin: 10px;
 }
 
 /*nav bar*/
@@ -65,7 +73,7 @@ nav ul li a:hover{
     align-items: center;
     /*height: 100vh;*/
     flex-basis: 1200px auto;
-    margin: 70px 30px;
+    margin: 70px 30px 0 30px;
 }
 /*Hero Image*/
 .hero-image{
@@ -118,4 +126,55 @@ nav ul li a:hover{
     width:300px;
     height:200px;
     margin: 10px;
+}
+/*Locations*/
+.locations-container{
+    /*margin: 30px 70px;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width:100%;
+    min-height: 500px;
+    background-image: url("../img/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+
+
+}
+.locations-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #000000;
+width: 300px;
+height: 300px;
+
+color: seashell;
+opacity: 1;
+}
+
+
+/*contact*/
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    min-height:200px;
+    gap: 20px;
+}
+
+/*Footer*/
+footer{
+    align-self: flex-start;
+
+}
+footer p{
+    text-align: left;
+    margin-left: 30px;
 }
